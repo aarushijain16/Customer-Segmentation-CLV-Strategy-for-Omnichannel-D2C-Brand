@@ -1,4 +1,4 @@
-# Customer Segmentation and CLV Strategy for Omnichannel D2C Brand
+# Customer Segmentation & CLV Strategy for Omnichannel D2C Brand
 ## *Project inspired by an omnichannel Indian lifestyle brand (Nicobar)*
 # Overview
 This project demonstrates how retail analytics frameworks can be adapted for premium lifestyle and design-led brands like Nicobar, without compromising brand identity, storytelling, or creativity.
