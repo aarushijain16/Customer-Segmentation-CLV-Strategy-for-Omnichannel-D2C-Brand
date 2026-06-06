@@ -155,4 +155,4 @@ demonstration, not a real business engagement.
 ---
 
 *Part of the E-Commerce & Supply Chain Analytics Portfolio*
-*[View full portfolio](https://aarushijain16.github.io/sales-demand-customer-growth-portfolio/)*
+*[View full portfolio](https://aarushijportfolio.lovable.app/)*
