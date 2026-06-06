@@ -1,179 +1,158 @@
 # Customer Segmentation & CLV Strategy for Omnichannel D2C Brand
-## *Project inspired by an omnichannel Indian lifestyle brand (Nicobar)*
-# Overview
-This project demonstrates how retail analytics frameworks can be adapted for premium lifestyle and design-led brands like Nicobar, without compromising brand identity, storytelling, or creativity.
+### Inspired by Nicobar - Indian Lifestyle & Design Brand
+### Python · Power BI · K-Means · CLV Modelling · RFM Analysis
 
-Using Python and Power BI, I built an omnichannel customer insight framework that connects:
+---
 
-- Customer segmentation
+## Overview
 
-- Engagement and loyalty behavior
+This project builds an omnichannel customer segmentation and CLV framework 
+for a premium lifestyle D2C brand - modelled on the business context of 
+Nicobar, an Indian design-led omnichannel retailer.
 
-- CLV (customer lifetime value) signals
+Using publicly available retail data and synthetically generated omnichannel 
+behaviour, I built a customer insight system that connects segmentation, 
+lifetime value signals, loyalty risk, and product affinity - designed to 
+support CRM strategy, retention planning, and merchandising decisions.
 
-- Product affinity and category intent
+**Tools:** Python (Pandas, NumPy, Scikit-learn) · Power BI · K-Means · 
+PCA · CLV Proxy Modelling · Feature Engineering
 
-The goal was to show how data can support brand strategy, CRM personalization, and omnichannel experience design, not replace creative intuition.
+---
 
-# Business Problem
+## Business Problem
 
-Lifestyle brands often excel at storytelling and aesthetics, but face challenges when scaling:
+Premium D2C brands face a specific scaling challenge: their customers are 
+not homogeneous. A brand like Nicobar has brand loyalists, occasional 
+premium buyers, discount-driven shoppers, and at-risk advocates - all 
+with completely different retention needs.
 
-- Limited visibility into who their most valuable customers really are
+Key questions this project addresses:
 
-- Difficulty balancing community-building vs. revenue growth
+- Who are the highest-value customer segments and what drives their loyalty?
+- Which customers are at churn risk despite being brand-aligned?
+- How do online and in-store behaviours differ across segments?
+- How can CRM strategy move beyond discounts toward relationship-driven growth?
 
-- Weak linkage between customer behavior and CRM strategy
+---
 
-- Over-reliance on discount-driven engagement
+## Analytical Approach
 
-Key questions addressed:
+**Customer Segmentation & Personas**
+- Behavioural clustering using K-Means and PCA
+- Segmentation across spend, frequency, engagement, and channel mix
+- Five customer personas defined:
+  - Engaged Regulars
+  - Transitional Shoppers
+  - Premium but At-Risk
+  - Occasional Premiums
+  - Price-Sensitive Shoppers
 
-- Who are the core, emerging, and at-risk customer segments?
+**CLV & Loyalty Signal Modelling**
+- CLV proxy modelling by cluster
+- Loyalty and churn-risk scoring
+- Engagement index based on visit frequency and interaction depth
 
-- How do behaviors differ online vs. in-store?
+**Channel & Experience Analysis**
+- Online vs. in-store behaviour comparison
+- Basket size, dwell time, and visit frequency by segment
+- Cross-channel optimisation opportunities
 
-- Which segments drive long-term value, not just short-term sales?
-
-- How can loyalty be cultivated beyond discounts?
-
-# Solution Approach
-
-I designed a customer-centric, omnichannel analytics framework using retail data as a proxy sandbox.
-
-**🔹 Customer Segmentation & Personas**
-
-- Behavioral clustering using K-Means
-
-- Segmentation based on spend, frequency, engagement, and channel mix
-
-- Defined five customer personas:
-
-- Engaged Regulars
-
-- Transitional Shoppers
-
-- Premium but At-Risk
-
-- Occasional Premiums
-
-- Price-Sensitive Shoppers
-
-**🔹 Engagement, CLV & Loyalty Signals**
-
-- CLV proxy modeling by cluster
-
-- Loyalty and churn-risk indicators
-
-- Engagement index based on visit patterns and interaction depth
-
-**🔹 Channel & Experience Insights**
-
-- Online vs. in-store behavior comparison
-
-- Basket size, dwell time, and visit frequency analysis
-
-- Identification of cross-channel optimization opportunities
-
-**🔹 Product Affinity & Intent**
-
+**Product Affinity & Intent Mapping**
 - Category co-purchase and affinity analysis
+- Product groupings mapped to lifestyle intents 
+  (e.g., Hosting, Comfort Living, Gifting)
+- Insights to guide curated collections and personalisation
 
-- Mapping product groupings to lifestyle intents (e.g., Hosting, Comfort Living)
+**Strategic Reporting**
+- Power BI dashboard built for brand, CRM, and growth teams
+- Strategy deck synthesising findings into actionable priorities
 
-- Insights to guide curated collections and personalization
+---
 
-**🔹 Strategic Reporting**
+## Key Findings
 
-- Synthesized insights into a Power BI dashboard and strategy deck
+**High-value, low-frequency buyers drive ~30% of revenue**
+RFM and CLV modelling revealed that a small segment of high-value, 
+low-frequency customers - those who buy rarely but spend significantly 
+when they do - contributed approximately 30% of total revenue. These 
+customers require a completely different retention approach than 
+frequent buyers.
 
-- Designed for brand, CRM, and growth teams — not just analysts
+**~25% of the customer base is silently at churn risk**
+A quarter of the customer base was identified as "At-Risk" - brand-aligned 
+customers showing declining engagement signals. Personalised reactivation 
+without discount dependency is the highest-impact intervention for this group.
 
-# Key Business Insights and Strategic Impact
+**Loyalty correlates with engagement frequency, not spend**
+Customers who engaged more frequently - visiting, browsing, interacting - 
+showed stronger long-term retention regardless of basket size. This shifts 
+the loyalty programme design from spend-based rewards toward 
+community and access-driven incentives.
 
-## *(Translated for lifestyle and D2C brand context)*
+**Occasional Premiums have the highest untapped CLV potential**
+This segment buys infrequently but at premium price points. CLV modelling 
+showed they represent the largest upside if converted to higher frequency 
+through experiential retention - events, exclusive previews, 
+editorial storytelling.
 
-- High-value, low-frequency customers generated ~30% of revenue
- → Opportunity to design micro-collections and CRM nudges between major launches
+**Product affinity clusters align with lifestyle intent, not categories**
+Co-purchase analysis revealed customers shop by lifestyle moment 
+(Hosting, Comfort Living, Gifting) rather than product category. 
+This has direct implications for collection curation, cross-sell 
+sequencing, and content strategy.
 
-- Loyalty correlated more with engagement frequency than spend
- → Shift focus from discounts to community-driven loyalty programs
+---
 
-- Occasional Premiums showed the highest CLV potential
- → Prioritize experiential retention (events, previews, storytelling)
+## Strategic Recommendations
 
-- 25% customers identified as “At-Risk” but brand-aligned
- → Personalized reactivation without eroding brand equity
+- Build persona-led CRM journeys - different messaging, cadence, 
+  and offer logic for each of the five segments
+- Shift loyalty programme design from spend-based to 
+  access-and-experience-based
+- Prioritise Occasional Premiums for experiential retention 
+  (events, previews, community)
+- Use engagement signals - not just purchase history - to identify 
+  brand loyalists before they churn
+- Align merchandising and content with lifestyle intent clusters, 
+  not product categories
+- Monitor segment migration monthly via Power BI dashboard
 
-- Strong product affinity clusters emerged by intent
- → Curate collections and content by lifestyle moments, not categories
+---
 
-# Strategic Recommendations
+## Modelled Business Impact
 
-- Build persona-led CRM journeys instead of generic campaigns
+*All impacts are modelled estimates based on publicly available and 
+synthetically generated data, scaled to reflect real-world D2C brand economics.*
 
-- Use engagement signals to identify brand loyalists early
+| Segment Insight | Strategic Opportunity |
+|---|---|
+| ~30% revenue from high-value low-frequency buyers | CRM nudges + micro-collection strategy |
+| ~25% at-risk but brand-aligned | Personalised reactivation without discounting |
+| Engagement > spend as loyalty driver | Community-led loyalty programme redesign |
+| Occasional Premiums - highest CLV upside | Experiential retention investment |
 
-- Design loyalty programs around access and experience, not price
+---
 
-- Align merchandising and storytelling with customer intent clusters
+## Tools & Technologies
 
-- Use dashboards for ongoing omnichannel monitoring
+| Tool | Usage |
+|---|---|
+| Python (Pandas, NumPy, Scikit-learn) | Segmentation, CLV modelling, feature engineering |
+| K-Means + PCA | Behavioural clustering and dimensionality reduction |
+| Power BI | Executive dashboard and segment monitoring |
+| Synthetic data generation | Omnichannel behaviour simulation |
 
-# Tools and Technologies
+---
 
-- Python (Pandas, NumPy, Scikit-learn)
+## Dataset Note
 
-- Clustering & Modeling: K-Means, PCA
+This project uses publicly available retail datasets and synthetically 
+generated omnichannel behaviour data. Insights are framed to reflect 
+real-world D2C brand strategy. This is an analytical framework 
+demonstration, not a real business engagement.
 
-- Power BI
+---
 
-- Customer Analytics: Segmentation, CLV proxy, engagement scoring
-
-- Data Engineering: Feature scaling, encoding, synthetic data generation
-
-# Why this Matters for Your Brand
-
-- This project shows how analytics can:
-
-- Strengthen customer understanding without diluting brand identity
-
-- Support CRM and personalization decisions
-
-- Balance creativity with data-driven growth
-
-- Build long-term loyalty, not just short-term conversions
-
-The same framework can be adapted for:
-
-- Lifestyle & design brands
-
-- Premium D2C companies
-
-- Omnichannel retail businesses
-
-# 📌 Note
-
-This project uses publicly available retail datasets and synthetically generated customer data to simulate omnichannel behavior. Insights are framed to reflect real-world lifestyle brand strategy.
-
-# 💬 How I Can Help You
-
-If your brand wants to:
-
-- Understand customers beyond demographics
-
-- Improve CRM personalization
-
-- Build loyalty without discounting
-
-- Align data with brand storytelling
-
-I can adapt this framework to your real customer and transaction data and deliver:
-
-- Segmentation models
-
-- Engagement & CLV insights
-
-- Power BI dashboards
-
-- Strategic, brand-aligned recommendations
+*Part of the E-Commerce & Supply Chain Analytics Portfolio*
+*[View full portfolio](https://aarushijain16.github.io/sales-demand-customer-growth-portfolio/)*
